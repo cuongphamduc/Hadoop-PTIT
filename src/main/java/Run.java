@@ -25,12 +25,11 @@ public class Run {
 
     public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException {
         num_features = Integer.parseInt(args[0]);
-        ++num_features;
         lr = Float.parseFloat(args[1]);
 
         Configuration conf = new Configuration();
         FileSystem hdfs = FileSystem.get(conf);
-        Float[] theta = new Float[num_features];
+        Float[] theta = new Float[num_features + 1];
 
         for (int i = 0; i < Integer.parseInt(args[2]); i++) {
             if (i == 0) {
@@ -44,7 +43,7 @@ public class Run {
                 String line1;
 
                 while ((line1 = br1.readLine()) != null) {
-                    String[] theta_line = line1.split("\\,");
+                    String[] theta_line = line1.split("\t");
                     theta[iter] = Float.parseFloat(theta_line[1]);
                     iter++;
                 }
@@ -59,6 +58,7 @@ public class Run {
             hdfs.close();
 
             conf.setFloat("lr", lr);
+            conf.setInt("numfe", num_features);
 
             for (int j = 1; j < num_features; j++) {
                 conf.setFloat("theta".concat(String.valueOf(j)), theta[j]);

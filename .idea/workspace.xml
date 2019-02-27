@@ -6,7 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adca49a9-d148-40c5-b4e4-1dd031b6c70b" name="Default Changelist" comment="Init" />
+    <list default="true" id="adca49a9-d148-40c5-b4e4-1dd031b6c70b" name="Default Changelist" comment="Init">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logisMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logisMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logisReduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logisReduce.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Run.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="48" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="48" />
+            <state relative-caret-position="739">
+              <caret line="78" column="19" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/logisReduce.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="135">
+              <caret line="9" column="41" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,12 +51,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/logisMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="24" column="51" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="51" />
+            <state relative-caret-position="-11">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#530#531#0" expanded="true" />
-                <element signature="e#595#596#0" expanded="true" />
+                <element signature="e#596#603#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,9 +88,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/main.java" />
         <option value="$PROJECT_DIR$/src/main/java/logisReduce.java" />
         <option value="$PROJECT_DIR$/src/main/java/logisMap.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Run.java" />
       </list>
     </option>
@@ -108,51 +113,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Hadoop-Logistic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hadoop-Logistic" type="462c0819:PsiDirectoryNode" />
+              <item name="Hadoop-PTIT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hadoop-PTIT" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Hadoop-Logistic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hadoop-Logistic" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hadoop-Logistic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hadoop-Logistic" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hadoop-Logistic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hadoop-Logistic" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hadoop-Logistic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hadoop-Logistic" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="Hadoop_Logistic_jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hadoop-Logistic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hadoop-Logistic" type="462c0819:PsiDirectoryNode" />
+              <item name="Hadoop-PTIT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hadoop-PTIT" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Hadoop-Logistic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hadoop-Logistic" type="462c0819:PsiDirectoryNode" />
+              <item name="Hadoop-PTIT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hadoop-PTIT" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Hadoop-Logistic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hadoop-Logistic" type="462c0819:PsiDirectoryNode" />
+              <item name="Hadoop-PTIT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Hadoop-PTIT" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -161,20 +143,20 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550784831958" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551241619440" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -193,17 +175,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Run">
+  <component name="RunManager">
     <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Run" />
-      <module name="Hadoop-Logistic" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main" />
-      <module name="Hadoop-Logistic" />
+      <module name="Hadoop" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -211,7 +186,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Run" />
-        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -229,16 +203,18 @@
       <workItem from="1550779236226" duration="710000" />
       <workItem from="1550779979542" duration="4167000" />
       <workItem from="1550784613396" duration="436000" />
+      <workItem from="1551239352449" duration="2163000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5527000" />
+    <option name="totallyTimeSpent" value="7690000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26120642" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -247,7 +223,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32829374" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -258,7 +234,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32829374" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -282,10 +258,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/data/dota2Test.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
       <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -295,20 +267,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Run.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="48" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/logisReduce.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="135">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -317,12 +279,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/logisMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" column="51" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="51" />
+        <state relative-caret-position="-11">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#596#603#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Run.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="739">
+          <caret line="78" column="19" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -381,7 +351,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Hadoop-Logistic</last-edited>
+          <last-edited>Hadoop</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
