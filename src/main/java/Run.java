@@ -31,8 +31,8 @@ public class Run {
         FileSystem hdfs = FileSystem.get(conf);
         Float[] theta = new Float[num_features + 1];
 
-        for (int i = 0; i < Integer.parseInt(args[2]); i++) {
-            if (i == 0) {
+        for (int i = 1; i <= Integer.parseInt(args[2]); i++) {
+            if (i == 1) {
                 for (int j = 0; j < num_features; j++) {
                     theta[j] = (float) 0;
                 }
@@ -63,7 +63,7 @@ public class Run {
             for (int j = 1; j < num_features; j++) {
                 conf.setFloat("theta".concat(String.valueOf(j)), theta[j]);
             }
-            Job job = Job.getInstance(conf, "Calculation of Theta");
+            Job job = Job.getInstance(conf, "Running Logistic Regression");
             job.setJarByClass(Run.class);
 
             FileInputFormat.setInputPaths(job, new Path(args[3]));
