@@ -33,22 +33,22 @@ public class Run {
 
         for (int i = 1; i <= Integer.parseInt(args[2]); i++) {
             if (i == 1) {
-                for (int j = 0; j < num_features; j++) {
-                    theta[j] = (float) 0;
+                for (int j = 1; j <= num_features; j++) {
+                    theta[j] = 0.0f;
                 }
             } else {
-                int iter = 0;
+                int index = 1;
 
-                BufferedReader br1 = new BufferedReader(new InputStreamReader(hdfs.open(new Path(args[4]))));
-                String line1;
+                BufferedReader br = new BufferedReader(new InputStreamReader(hdfs.open(new Path(args[4]))));
+                String line;
 
-                while ((line1 = br1.readLine()) != null) {
-                    String[] theta_line = line1.split("\t");
-                    theta[iter] = Float.parseFloat(theta_line[1]);
-                    iter++;
+                while ((line = br.readLine()) != null) {
+                    String[] theta_line = line.split("\t");
+                    theta[index] = Float.parseFloat(theta_line[1]);
+                    index++;
                 }
 
-                br1.close();
+                br.close();
             }
 
             if (hdfs.exists(new Path(args[4]))) {
@@ -60,7 +60,7 @@ public class Run {
             conf.setFloat("lr", lr);
             conf.setInt("numfe", num_features);
 
-            for (int j = 1; j < num_features; j++) {
+            for (int j = 1; j <= num_features; j++) {
                 conf.setFloat("theta".concat(String.valueOf(j)), theta[j]);
             }
             Job job = Job.getInstance(conf, "Running Logistic Regression");

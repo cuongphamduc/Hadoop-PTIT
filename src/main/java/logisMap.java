@@ -19,35 +19,40 @@ public class logisMap extends Mapper<LongWritable, Text, Text, FloatWritable> {
 
     @Override
     public void setup(Context context) {
-        lr = context.getConfiguration().getFloat("lr", 0);
+        lr = context.getConfiguration().getFloat("lr", 0.0f);
         num_features = context.getConfiguration().getInt("numfe", 0);
         Xi = new Float[num_features + 1];
     }
 
     public void map(LongWritable key, Text value, OutputCollector<Text, FloatWritable> output, Context context) throws IOException {
         ++count;
-        float predict = 0;
-        String[] temp = value.toString().split("\\,");
+        String[] s = value.toString().split("\\,");
+
+        theta_i.add(0.0f);
 
         if (count == 1) {
-            for (int i = 1; i < temp.length; i++) {
-                theta_i.add(context.getConfiguration().getFloat("theta".concat(String.valueOf(i)), 0));
+            for (int i = 1; i < s.length; i++) {
+                theta_i.add(context.getConfiguration().getFloat("theta".concat(String.valueOf(i)), 0.0f));
             }
         }
 
         for (int i = 1; i < Xi.length; i++) {
-            Xi[i] = Float.parseFloat(temp[i]);
+            Xi[i] = Float.parseFloat(s[i]);
         }
 
-        float sum = 0;
+        float sum = 0.0f;
 
         for (int i = 1; i < Xi.length; i++) {
             sum += (Xi[i] * theta_i.get(i));
         }
 
-        predict = (float) (1 / (1 + (Math.exp(-sum))));
+        float predict = (float) (1 / (1 + (Math.exp(-sum))));
 
-        float Yi = Float.parseFloat(temp[0]);
+        float Yi = Float.parseFloat(s[0]);
+
+        if ((int) Yi == -1) {
+            Yi = 0.0f;
+        }
 
         for (int i = 1; i < Xi.length; i++) {
             float tmp = theta_i.get(i);

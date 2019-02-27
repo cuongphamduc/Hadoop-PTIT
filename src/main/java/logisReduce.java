@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class logisReduce extends Reducer<Text, FloatWritable, Text, FloatWritable> {
     public void reduce(Text key, Iterable<FloatWritable> values, OutputCollector<Text, FloatWritable> output) throws IOException {
-        float sum = 0;
+        float sum = 0.0f;
         int count = 0;
         for (FloatWritable value : values) {
             sum += value.get();
